@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:background="#BBBBBB">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="142dp"
+        android:layout_height="43dp"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classPic" />
+
+    <EditText
+        android:id="@+id/textID"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/textID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/textPW"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/textPW"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textID"
+        app:layout_constraintStart_toStartOf="@+id/textID"
+        app:layout_constraintTop_toBottomOf="@+id/textID" />
+
+    <Button
+        android:id="@+id/ok"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/tab_indicator_text"
+        android:text="@string/ok"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/login"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/tab_indicator_text"
+        android:text="@string/login"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/textPW"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textPW"
+        app:layout_constraintTop_toBottomOf="@+id/textPW" />
+
+    <ImageView
+        android:id="@+id/classPic"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="@string/classPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/expicture" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
